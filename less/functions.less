@@ -4,6 +4,7 @@
   @data-uri: data-uri("image/svg+xml;charset=UTF-8", '../images/@{file}');
   @new-uri: replace("@{data-uri}", escape("#333"), "@{encoded-white}");
   background-image: e(@new-uri);
+  content: e(@new-uri);
 
   // Hide "inner" SVG images (icon class might be either on a span around the
   // svg or directly on a img/svg tag.
